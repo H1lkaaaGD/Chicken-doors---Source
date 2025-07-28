@@ -3,11 +3,10 @@
 pub class Module_Shadow
 {
   pub int _SChance;
-  pub Model 3_ShadowChicken;
   pub PlayerHandler CurrentRoom;
   pub void CloneToRoom()
   {
-    3_SahdowChicken:Clone(CurrentScene._GenRooms:CurrentRoom.EntiteShadowSP + 1):WithChance = _SChance;
-    OnCloned(3_ShadowChicken).SetTransform(JupscareSP);
+    ScriptParent:Clone(CurrentScene._GenRooms:CurrentRoom.EntiteShadowSP + 1):WithChance = _SChance;
+    OnCloned(ScriptParent).SetTransform(JupscareSP);
   }
 }
