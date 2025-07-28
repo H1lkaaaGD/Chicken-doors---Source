@@ -1,0 +1,22 @@
+!lib ChickenGun;
+
+pub class Module_ShadowJumpscare
+{
+  pub PlayerHandler CurrentRoom;
+  pub Audio ShadowJumpscare;
+  pub void Jumpscare()
+  {
+    wait(5);
+    ScriptParent.ShadowJumoscare:Play();
+    wait(ShadoJumpscare, length);
+    ScriptParent:Destroy();
+    RunCommand.Module_Light:FlickerLight(5);
+  }
+  if (ScriptParent.Parent == CurrentScene._GenRooms:CurrentRoom + 1)
+    {
+    OnHit(Player, CurrentScene._GenRooms:CurrentRoom.DoorHitbox)
+      {
+        Jumpscare()
+      }
+    }
+}

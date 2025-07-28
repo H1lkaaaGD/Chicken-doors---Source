@@ -1,4 +1,4 @@
-!lib ChickenGun
+!lib ChickenGun;
 
 pub class Module_Shadow
 {
@@ -7,6 +7,6 @@ pub class Module_Shadow
   pub PlayerHandler CurrentRoom;
   pub void CloneToRoom()
   {
-    Clone(CurrentScene._GenRooms:CurrentRoom + 1):WithChance = _SChance;
+    3_ShdowChicken:Clone(CurrentScene._GenRooms:CurrentRoom + 1):WithChance = _SChance;
   }
 } // Shandow main code
