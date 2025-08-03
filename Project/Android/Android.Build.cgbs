@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8">
+<Android.BS>
+  <AppName>Chicken doors</AppName>
+  <Vesion v="1.0.0-r"/>
+  <lib>
+    <armeabi>true</armeabi>
+    <Arm64>true</Arm64>
+  </lib>
+</Android.BS>
