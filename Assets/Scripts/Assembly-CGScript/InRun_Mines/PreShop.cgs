@@ -1,0 +1,10 @@
+#lib <System>
+#lib <CGEngine>
+#lib <CGEngine.UI>
+
+public class PreShop
+{
+  public Object AcceptButton;
+  public Object _ItemButton;
+  public string CurrentKnobs;
+}
