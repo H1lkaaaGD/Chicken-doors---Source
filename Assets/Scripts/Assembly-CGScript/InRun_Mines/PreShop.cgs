@@ -4,7 +4,25 @@
 
 public class PreShop
 {
+  public ShopUI = Scene.GaneUI.ShopUI;
+  public BL_Button = Scene.GaneUI.ShopUI.Bulklight;
+  public LP_Button = Scene.GaneUI.ShopUI.LockPicks;
+  public BP_Button = Scene.GaneUI.ShopUI.BandagesPack;
+  public BtP_Button = Scene.GaneUI.ShopUI.BatterysPack;
+  public Accept_Button = Scene.GaneUI.ShopUI.AcceptAll  ;
+  
   public Object AcceptButton;
   public Object _ItemButton;
   public string CurrentKnobs;
+  
+  void OnScene<Loaded>
+  {
+    Print:warning("!!!PreShop не доделан!!!");
+    Script<Parent>.Active == true
+  }
+  void OnAcceptButtonClick()
+  {
+    Print:Msg("Ничего не куплено.");
+    Script<Parent>.Active == false
+  }
 }
