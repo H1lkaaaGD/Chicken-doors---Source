@@ -1,0 +1,40 @@
+name: Отчет об ошибке
+description: Описание проблемы или бага в игре.
+labels: ["тип: незначительная ошибка", "сатаус: предстоящая сортировка"]
+title: "Отчет об ошибке: "
+body:
+  - type: markdown
+    attributes:
+      value: "# Амогус!"
+  - type: checkboxes
+    attributes:
+      label: Контрольный список проблем
+      description: Обязательно выполните эти действия, чтобы увеличить шансы на решение вашей проблемы!
+      options:
+        - label: Я проверил страницы проблем / обсуждений, чтобы узнать, сообщалось ли уже о моей проблеме
+        - label: Я правильно озаглавил свою проблему
+
+  - type: dropdown
+    attributes:
+      label: Платформа
+      description: На какой платформе ты играешь?
+      options:
+        - Android
+        - iOS/iPadOS
+        - Windows
+        - MacOS
+        - Скомпилировал игру из исходного кода
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## Опишите свой баг."
+
+  - type: textarea
+    attributes:
+      label: Описание (включая любые изображения, видео, ошибки или логи)
+      description: Расскажите как можно подробнее.
+      placeholder: Опиши проблему здесь...
+    validations:
+      required: true
