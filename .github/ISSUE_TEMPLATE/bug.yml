@@ -1,6 +1,6 @@
-name: Отчет об ошибке
+name: Баг
 description: Описание проблемы или бага в игре.
-labels: ["тип: незначительная ошибка", "сатаус: предстоящая сортировка"]
+labels: ["тип: ошибка", ""]
 title: "Отчет об баге: "
 body:
   - type: dropdown
@@ -11,7 +11,6 @@ body:
         - Android
         - iOS/iPadOS
         - Windows
-        - MacOS
         - Скомпилировал игру из исходного кода
     validations:
       required: true
@@ -22,7 +21,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Описание (включая любые изображения, видео, ошибки или логи)
+      label: Описание (можно вставить изображения или видео с записанными ощибками)
       description: Расскажите как можно подробнее.
       placeholder: Опиши проблему здесь...
     validations:

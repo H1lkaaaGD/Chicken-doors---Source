@@ -1,0 +1,16 @@
+name: Краш
+description: Описание краша игры.
+labels: ["тип: краш", ""]
+title: "Отчет об краше: "
+body:
+  - type: markdown
+    attributes:
+      value: "## Сообщение ощибки после краша игры."
+
+  - type: textarea
+    attributes:
+      label: Сообщение
+      description: Вставьте текст ощибки.
+      placeholder: Текст ощибки
+    validations:
+      required: true
